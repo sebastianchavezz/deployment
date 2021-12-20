@@ -41,3 +41,4 @@ traitlets @ file:///home/conda/feedstock_root/build_artifacts/traitlets_16352605
 wcwidth @ file:///home/conda/feedstock_root/build_artifacts/wcwidth_1600965781394/work
 Werkzeug @ file:///tmp/build/80754af9/werkzeug_1635505089296/work
 wincertstore==0.2
+gunicorn
