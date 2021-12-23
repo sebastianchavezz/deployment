@@ -11,10 +11,15 @@
     
     
     <table>
-    <tr><th>type</th><th>name</th><th>steam_appid</th>
+    <tr>
+        <th>Name</th><th>Steam id</th><th>Developes</th><th>Genre</th><th>Units Sold</th><th>Price</th><th>Revenue</th><th>Review</th>
     
+    </tr>
+
     {% for s in spel %}
-    <tr><tr><td>{{s.type}}</td><td>{{s.name}}</td><td>{{s.steam_appid}}</td></tr>
+    <tr>
+        <td>{{s.name}}</td><td>{{s.steam_id}}</td><td>{{s.developers}}</td><td>{{s.genre}}</td><td>{{s.units_sold}}</td><td>{{s.prices_eu}}</td><td>{{s.final_revenue}}</td><td>{{s.reviews}}</td>
+    </tr>
 
     {% endfor %}
     </table>
