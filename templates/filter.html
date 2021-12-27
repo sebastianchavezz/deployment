@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Name</th><th>Steam id</th><th>Developes</th><th>Genre</th><th>Units Sold</th><th>Price</th><th>Revenue</th><th>Review</th>
+        
+        </tr>
+        {% for r in result %}
+        <tr>
+            <td style="border: solid 2px lightgrey;">{{r.name}}</td><td style="border: solid 2px lightgrey;">{{r.steam_id}}</td><td style="border: solid 2px lightgrey;">{{r.developers}}</td><td style="border: solid 2px lightgrey;">{{r.genre}}</td><td  style="border: solid 2px lightgrey;">{{r.units_sold}}</td><td style="border: solid 2px lightgrey;">{{r.prices_eu}}</td><td style="border: solid 2px lightgrey;">{{r.final_revenue}}</td><td style="border: solid 2px lightgrey;">{{r.reviews}}</td>
+        </tr>
+        {% endfor %}
+</body>
+</html>

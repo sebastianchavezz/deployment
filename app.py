@@ -1,9 +1,14 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy.orm import session, sessionmaker
+from sqlalchemy import create_engine
+
+
+
 
 app = Flask(__name__)
 db_name = 'sqlite:///database2.db'
-
+engine = create_engine(db_name, echo = True)
 
 
 app.config['SQLALCHEMY_DATABASE_URI'] = db_name
@@ -11,6 +16,9 @@ app.config['SQLALCHEMY_TRACK_NODIFICATIONS'] = True
 
 
 db = SQLAlchemy(app)
+
+Session = sessionmaker(bind = engine)
+session = Session()
 
 
 class Game(db.Model):
@@ -42,21 +50,31 @@ class Game(db.Model):
         self.prices_eu = price 
         self.units_sold = units_sold
         self.revenue = revenue
-        
-        
 
+     
+    
 
 
 
 
 @app.route('/')
+def home():
+    return render_template('home.html')
+
+
+@app.route('/dataset')
 def get_name():
     
 
     spel = Game.query.all()
    
 
-    return render_template('home.html',spel=spel) 
+    return render_template('dataset.html',spel=spel) 
+
+@app.route('/stats')
+def visuals():
+    return render_template("stats.html")
+
 
 if __name__ == '__main__':
     

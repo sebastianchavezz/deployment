@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #F0FFFF;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="/">Home</a>
+        <a href='/dataset''>Dataset</a>
+        <a href="/stats">Stats and Visuals</a>
+      </div>
+    <h1  style="margin: auto; width: 50%;padding: 10px; text-align: center;">Filtered database</h1>
+    
+    
+    
+    <table>
+    <tr>
+        <th>Name</th><th>Steam id</th><th>Developes</th><th>Genre</th><th>Units Sold</th><th>Price</th><th>Revenue</th><th>Review</th>
+    
+    </tr>
+
+    {% for s in spel %}
+    <tr>
+        <td style="border: solid 2px black;">{{s.name}}</td><td style="border: solid 2px black;">{{s.steam_id}}</td><td style="border: solid 2px black;">{{s.developers}}</td><td style="border: solid 2px black;">{{s.genre}}</td><td  style="border: solid 2px black;">{{s.units_sold}}</td><td style="border: solid 2px black;">€{{s.prices_eu}}</td><td style="border: solid 2px black;">€{{s.final_revenue}}</td><td style="border: solid 2px black;">{{s.reviews}}</td>
+    </tr>
+
+    {% endfor %}
+    </table>
+</body>
+</html>
