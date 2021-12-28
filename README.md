@@ -26,5 +26,5 @@ The [website](https://steamgamessebas.herokuapp.com/) is quite primitive, what y
 
 ## Visuals
 ![newplot](https://user-images.githubusercontent.com/42916343/147551540-125e706d-9c2a-415c-a8fe-7f4284c95dcf.png)
-![steam](https://user-images.githubusercontent.com/42916343/147551547-3360eb59-4417-47e8-b16d-f461621eafcc.jpg)
 ![reve_name](https://user-images.githubusercontent.com/42916343/147551553-a9488755-d881-44cc-9a39-02c9a0522639.png)
+![cat](https://user-images.githubusercontent.com/42916343/147551675-bdf9dc8e-67d6-45ba-a9cb-e1418414194f.png)
