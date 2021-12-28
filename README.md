@@ -1,6 +1,6 @@
 # Deployment challenge - Steam analytics
 
-![steam (Image)](assets/steam.jpg)
+[steam (Image)](assets/steam.jpg)
 
 ## Description
 
