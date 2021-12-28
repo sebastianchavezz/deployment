@@ -1,8 +1,9 @@
 # Deployment challenge - Steam analytics
 
-[steam (Image)](assets/steam.jpg)
+![steam](https://user-images.githubusercontent.com/42916343/147549993-7e833cd7-6132-4547-9395-2677d1057f3a.jpg)
 
 ## Description
+
 
 Create and deploy a web application on heroku using Flask that displays and visualize some insides. The data was provided as a json file. For this challenge we needed to make a sql database and read from it. 
 
