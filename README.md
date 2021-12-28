@@ -22,3 +22,9 @@ for the installation run the command: `python -m pip install -r requirements.txt
 
 ## Usage
 
+The [website](https://steamgamessebas.herokuapp.com/) is quite primitive, what you are going to see is a filtered dataset that I provided with some features that were challenging to get. 
+
+## Visuals
+![newplot](https://user-images.githubusercontent.com/42916343/147551540-125e706d-9c2a-415c-a8fe-7f4284c95dcf.png)
+![steam](https://user-images.githubusercontent.com/42916343/147551547-3360eb59-4417-47e8-b16d-f461621eafcc.jpg)
+![reve_name](https://user-images.githubusercontent.com/42916343/147551553-a9488755-d881-44cc-9a39-02c9a0522639.png)
